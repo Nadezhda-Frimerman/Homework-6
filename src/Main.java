@@ -35,9 +35,21 @@ public class Main {
         }
         System.out.println("");
         System.out.println("execise 8");
-        double money;
-        for (int i = 1; i <= 12; i = i++) {
-            System.out.println(i + " год является високосным");
+        int money = 0;
+        for (int i = 1; i <= 12; i++) {
+            money = money + 29_000;
+            System.out.printf("Месяц %s, сумма накоплений равна %s рублей%n", i, money);
+        }
+        System.out.println("execise 9");
+        double moneyWithPersent = 0;
+        for (int i = 1; i <= 12; i++) {
+            moneyWithPersent = (moneyWithPersent + 29_000) * 1.01;
+            System.out.printf("Месяц %s, сумма накоплений равна %.2f рублей%n", i, moneyWithPersent);
+        }
+        System.out.println(" ");
+        System.out.println("execise 10");
+        for (int i = 1; i <= 10; i++) {
+            System.out.printf("2 * %s = %s%n", i, i * 2);
         }
     }
 }
